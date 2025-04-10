@@ -13,22 +13,29 @@
 <?php
 require_once "src/Livro.php";
 
-$livro = new Livro();
+$livro1 = new Livro();
+$livro2 = new Livro();
 
-$livro->setTitulo("Vingadores Ultimato");
-$livro->setAutor("Steve Behling");
-$livro->setPaginas(160);
+$livro1->setTitulo("O Alquimista");
+$livro1->setAutor("Paulo Coelho");
+$livro1->setPaginas(102);
 
+$livro2->setTitulo("O Código Da Vinci");
+$livro2->setAutor("Dan Brown");
+$livro2->setPaginas(432);
 ?>
 
 <ul>
-    <li><b>Título:</b><?=$livro->getTitulo()?></li>
-    <li><b>Autor:</b><?=$autor->getAutor()?></li>
-    <li><b>Páginas:</b><?=$paginas->getPaginas()?></li>
+    <li><b>Título:</b><?=$livro1->getTitulo()?></li>
+    <li><b>Autor:</b><?=$livro1->getAutor()?></li>
+    <li><b>Páginas:</b><?=$livro1->getPaginas()?></li>
 </ul>
 
-<pre><?=var_dump($livro)?></pre>
-
+<ul>
+    <li><b>Título:</b><?=$livro2->getTitulo()?></li>
+    <li><b>Autor:</b><?=$livro2->getAutor()?></li>
+    <li><b>Páginas</b><?=$livro2->getPaginas()?></li>
+</ul>
     
 </body>
 </html>
