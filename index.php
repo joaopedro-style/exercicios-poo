@@ -36,6 +36,6 @@ $livro2->setPaginas(432);
     <li><b>Autor:</b><?=$livro2->getAutor()?></li>
     <li><b>Páginas</b><?=$livro2->getPaginas()?></li>
 </ul>
-    
+
 </body>
 </html>
