@@ -13,16 +13,21 @@
 <?php
 require_once "src/Livro.php";
 
-$livro1 = new Livro();
-$livro2 = new Livro();
+$livro = new Livro();
 
-$livro1->setTitulo("Vingadores Ultimato");
-$livro1->setAutor("Steve Behling");
-$livro1->setPaginas(160);
+$livro->setTitulo("Vingadores Ultimato");
+$livro->setAutor("Steve Behling");
+$livro->setPaginas(160);
 
-$livro2->setTitulo("O Senhor dos Anéis: A Sociedade do Anel");
-$livro2->setAutor("John Ronald Reuel Tolkien");
 ?>
+
+<ul>
+    <li><b>Título:</b><?=$livro->getTitulo()?></li>
+    <li><b>Autor:</b><?=$autor->getAutor()?></li>
+    <li><b>Páginas:</b><?=$paginas->getPaginas()?></li>
+</ul>
+
+<pre><?=var_dump($livro)?></pre>
 
     
 </body>
