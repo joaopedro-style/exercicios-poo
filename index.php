@@ -10,6 +10,20 @@
     <hr>
     <p><i>Faça as chamadas e testes nesta página</i></p>
 
+<?php
+require_once "src/Livro.php";
+
+$livro1 = new Livro();
+$livro2 = new Livro();
+
+$livro1->setTitulo("Vingadores Ultimato");
+$livro1->setAutor("Steve Behling");
+$livro1->setPaginas(160);
+
+$livro2->setTitulo("O Senhor dos Anéis: A Sociedade do Anel");
+$livro2->setAutor("John Ronald Reuel Tolkien");
+?>
+
     
 </body>
 </html>
