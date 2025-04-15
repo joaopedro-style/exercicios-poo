@@ -1,6 +1,7 @@
 <?php
 class Livro
 {
+    // Atributos/propriedades
     private string $titulo;
     private string $autor;
     private int $paginas;
