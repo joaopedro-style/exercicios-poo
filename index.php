@@ -18,15 +18,15 @@ $livro2 = new Livro("O Código Da Vinci", "Dan Brown", 432);
 ?>
 
 <ul>
-    <li><b>Título:</b><?=$livro1->getTitulo()?></li>
-    <li><b>Autor:</b><?=$livro1->getAutor()?></li>
-    <li><b>Páginas:</b><?=$livro1->getPaginas()?></li>
+    <li><b>Título:</b> <?=$livro1->getTitulo()?> </li>
+    <li><b>Autor:</b> <?=$livro1->getAutor()?> </li>
+    <li><b>Páginas:</b> <?=$livro1->getPaginas()?> </li>
 </ul>
 
 <ul>
-    <li><b>Título:</b><?=$livro2->getTitulo()?></li>
-    <li><b>Autor:</b><?=$livro2->getAutor()?></li>
-    <li><b>Páginas:</b><?=$livro2->getPaginas()?></li>
+    <li><b>Título:</b> <?=$livro2->getTitulo()?> </li>
+    <li><b>Autor:</b> <?=$livro2->getAutor()?> </li>
+    <li><b>Páginas:</b> <?=$livro2->getPaginas()?> </li>
 </ul>
 
 </body>
