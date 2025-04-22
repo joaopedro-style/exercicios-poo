@@ -18,7 +18,8 @@ require_once "src/models/Tecnico.php";
 require_once "src/models/Literario.php";
 require_once "src/models/Programacao.php";
 
-
+$livro1 = new Livro("O Alquimista", "Paulo Coelho", Genero::DRAMA, Formato::DIGITAL);
+$livro2 = new Livro("O Código Da Vinci", "Dan Brown", Genero::SUSPENSE,Formato::DIGITAL)
 ?>
 
 <ul>
