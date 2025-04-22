@@ -33,13 +33,13 @@ $programacao = new Programacao("O código Da Vinci", "Dan Brown", Formato::DIGIT
 <ul>
     <li><b>Título:</b> <?=$literario->getTitulo()?> </li>
     <li><b>Autor:</b> <?=$literario->getAutor()?> </li>
-    <li><b>Gênero:</b> <?=$literario->getGenero()?> </li>
+    <li><b>Gênero:</b> <?=$literario->getGenero()->name?> </li>
 </ul>
 
 <ul>
     <li><b>Título:</b> <?=$programacao->getTitulo()?> </li>
     <li><b>Autor:</b> <?=$programacao->getAutor()?> </li>
-    <li><b>Formato:</b> <?=$programacao->getFormato()?> </li>
+    <li><b>Formato:</b> <?=$programacao->getFormato()->name?> </li>
     <li><b>Linguagem:</b> <?=$programacao->getLinguagem()?> </li>
 </ul>
 
