@@ -13,22 +13,19 @@
 <?php
 require_once "src/Enums/Formato.php";
 require_once "src/Enums/Genero.php";
-require_once "src/models/Livro.php";
-require_once "src/models/Tecnico.php";
-require_once "src/models/Literario.php";
-require_once "src/models/Programacao.php";
+require_once "src/Models/Livro.php";
+require_once "src/Models/Tecnico.php";
+require_once "src/Models/Literario.php";
+require_once "src/Models/Programacao.php";
 
-$livro = new Livro("O Código Da Vinci", "Dan Brown");
+//$livro = new Livro("O Código Da Vinci", "Dan Brown");
 
 $literario = new Literario("O código Da Vinci", "Dan Brown", Genero::SUSPENSE);
 
 $programacao = new Programacao("O código Da Vinci", "Dan Brown", Formato::DIGITAL, "Simples e acessível");
 ?>
 
-<ul>
-    <li><b>Título:</b> <?=$livro->getTitulo()?> </li>
-    <li><b>Autor:</b> <?=$livro->getAutor()?> </li>
-</ul>
+
 
 <ul>
     <li><b>Título:</b> <?=$literario->getTitulo()?> </li>

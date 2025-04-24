@@ -1,5 +1,5 @@
 <?php
-class Livro
+abstract class Livro
 {
     // Atributos/propriedades
     private string $titulo;
